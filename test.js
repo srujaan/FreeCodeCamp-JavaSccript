@@ -134,3 +134,35 @@ for (const iterator of value1) {
     emptyset = iterator
     console.log(emptyset);
 }
+
+
+function area(l,b){
+    const area = l *b;
+    return area;
+}
+console.log(area(4, 3));
+
+/*
+*ARROW FUNCTIONS */
+
+const materials = [
+    "hydrogen",
+    "helium",
+    "Lithium",
+    "Beryllium"
+];
+
+console.log(materials.map(material => material.length));
+materials.map(({length}) => length)
+
+const num = [3,6,9,12];
+const m1 = num.map(x => x*2);
+console.log(m1);
+
+function a(){
+    const digits = [1,4,5,3,6,5,3]; 
+    const result = digits.map(y => y * 4/4 * 4);
+    return result
+}
+console.log(a());
+    
