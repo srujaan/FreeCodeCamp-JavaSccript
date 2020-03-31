@@ -166,3 +166,72 @@ function a(){
 }
 console.log(a());
     
+const numbers = [1, 3,6,5];
+const roots = numbers.map(Math.sqrt);
+console.log(roots);
+
+/*FUNCTION TO FIND THE SQUARE ROOT*/
+
+function sqRoot(){
+    let num = [];
+    const squareroot = num.map(Math.sqrt);
+    num = squareroot;
+    return squareroot;
+}
+
+console.log(sqRoot(5));
+
+function doMath(inputNum1){
+   // let inputNum1 = [9];
+    //var inputNum1=document.form1.input1.value;
+    const result = Math.sqrt(inputNum1);
+    return result;
+}
+
+console.log(doMath(9));
+
+let n1 = [1,2,3,4,5,6,7,8,9];
+let double = n1.map(n1 => n1 * 2);
+console.log(double);
+
+/*
+*THE OTHER WAY OF WRITING THE ABOVE CODE 
+*/
+
+let val = [1,2,3,4,5,6,7,8,9];
+let res = val.map(function(numm){
+    return numm * 2;
+})
+console.log(res);
+
+/*
+*USING MAP GENERICALLY
+ */
+
+let map = Array.prototype.map;
+let aa = map.call('Hello World', x => x.charCodeAt(0));
+console.log(aa);
+
+function asciiCode(word){
+    let map = Array.prototype.map;
+    let bb = map.call(word, y => y.charCodeAt(0));
+    return bb;
+}
+
+console.log(asciiCode('sd'));
+
+
+function doubleNumber(){
+   let cc = [8,39,20,29,4949,55];
+   for (let index = 0; index < cc.length; index++) {
+       const element = cc[index];
+       //console.log(element);
+       if (element == 8) {
+           console.log("8 is my favorite number");
+       }
+   }
+   let dd = cc.map(cc => cc * 2);
+   return dd;
+}
+console.log(doubleNumber());
+
