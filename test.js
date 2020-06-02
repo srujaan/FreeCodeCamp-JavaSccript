@@ -270,3 +270,11 @@ console.log(filterItems('an'));
 console.log(filterItems('g'));
 
 
+function reverseString(str) {
+    let r = str
+  
+    return str;
+  }
+  
+ reverseString("hello");
+  

@@ -1,4 +1,4 @@
-let user = {
+/*let user = {
     name: 'Kenneth',
     age: 28,
     data: {
@@ -23,7 +23,7 @@ let user = {
 */
 // user.data.friends = 'pete'
 
-function addFriend(userObj, friend) {
+/*function addFriend(userObj, friend) {
     // Only change code below this line
     let arr = []
     arr = userObj.data.friends;
@@ -32,9 +32,19 @@ function addFriend(userObj, friend) {
     return arr;
   
     // Only change code above this line
-  }
+  }*/
   
 //console.log(addFriend(user, 'Pete'));
-console.log(addFriend(user, 'Harry'))
+/*console.log(addFriend(user, 'Harry'))
 console.log(addFriend(user, 'Peter'))
-console.log(addFriend(user, 'Johnny'))
+console.log(addFriend(user, 'Johnny')) */
+
+
+function reverseString(str) {
+  for (var reversedStr = "", i = str.length - 1; i >= 0; i--){
+    reversedStr += str[i];
+  }
+  
+  return reversedStr
+
+reverseString("hello")
