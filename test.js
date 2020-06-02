@@ -235,3 +235,38 @@ function doubleNumber(){
 }
 console.log(doubleNumber());
 
+ /*
+* FILTER -- THE filter()  creates a new array with all 
+* elements that pass the test implemented by the 
+* provided function.
+ */
+
+const words = ['spray', 
+'limit', 
+'elite', 
+'exuberant', 
+'destruction',
+'present'
+];
+
+const ans = words.filter(wod => wod.length > 6);
+console.log(ans);
+
+function isBigEnough(value){
+    return value >= 10;
+}
+
+const filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+console.log(filtered);
+
+const fruits = ['apple', 'banana', 'mango', 'orange', 'grapes'];
+
+function filterItems(query){
+    return fruits.filter(el => el.toLowerCase().indexOf(query.toLowerCase()) > -1);
+}
+
+console.log(filterItems('ap'));
+console.log(filterItems('an'));
+console.log(filterItems('g'));
+
+

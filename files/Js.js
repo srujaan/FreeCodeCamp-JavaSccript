@@ -28,12 +28,13 @@ function addFriend(userObj, friend) {
     let arr = []
     arr = userObj.data.friends;
     arr.push(friend)
+    console.log(arr[1])
     return arr;
   
     // Only change code above this line
   }
   
-console.log(addFriend(user, 'Pete'));
-
-  
-  
+//console.log(addFriend(user, 'Pete'));
+console.log(addFriend(user, 'Harry'))
+console.log(addFriend(user, 'Peter'))
+console.log(addFriend(user, 'Johnny'))
