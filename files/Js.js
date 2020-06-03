@@ -40,11 +40,20 @@ console.log(addFriend(user, 'Peter'))
 console.log(addFriend(user, 'Johnny')) */
 
 
-function reverseString(str) {
+/*function reverseString(str) {
   for (var reversedStr = "", i = str.length - 1; i >= 0; i--){
     reversedStr += str[i];
   }
-  
+
   return reversedStr
 
-reverseString("hello")
+reverseString("hello")*/
+
+function factorialize(num) {
+  for(var product = 1; num > 0; num--) {
+    product = product * num
+  }
+  return product
+}
+
+factorialize(5);
