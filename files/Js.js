@@ -89,3 +89,37 @@ function largestOfFour(arr) {
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
+function findLongestWordLength(str) {
+  var words = str.split(' ');
+  var maxLength = 0;
+
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].length > maxLength) {
+      maxLength = words[i].length;
+    }
+  }
+
+  return maxLength;
+}
+
+/*function reverseString(str) {
+  for (var reversedStr = "", i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+  }
+  return reversedStr;
+}*/
+
+function findLongestWordLength(str) {
+  return str.length;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+function convertToF(celsius) {
+  let fahrenheit = celsius * 9/5 + 32;
+  return fahrenheit;
+}
+
+convertToF(30);
+
+
