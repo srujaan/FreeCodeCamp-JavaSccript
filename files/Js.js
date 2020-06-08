@@ -71,7 +71,7 @@ factorialize(5);*/
 }*/
 
 //findLongestWordLength("The quick brown fox jumped over the lazy dog");
-function largestOfFour(arr) {
+/*function largestOfFour(arr) {
   var results = [];
   for (var n = 0; n < arr.length; n++) {
     var largestNumber = arr[n][0];
@@ -109,7 +109,7 @@ function findLongestWordLength(str) {
   return reversedStr;
 }*/
 
-function findLongestWordLength(str) {
+/*function findLongestWordLength(str) {
   return str.length;
 }
 
@@ -122,4 +122,32 @@ function convertToF(celsius) {
 
 convertToF(30);
 
+*/
+/*function confirmEnding(str, target) {
+  
+  if (str.substr(str.length -target.length,str.length) !== target){
+    return false;
+  } else{
+    return true;
+  }
+
+return str;
+}
+
+confirmEnding("He has to give me a new name", "name");
+
+
+*/
+
+function repeatStringNumTimes(str, num) {
+  var repeatedString = "";
+  while (num >0) {
+    repeatedString += str;
+    num--;
+  }
+  return repeatedString
+
+}
+
+repeatStringNumTimes("*", 3);
 
