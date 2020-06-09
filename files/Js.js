@@ -161,10 +161,25 @@ nums.forEach(num => {
 console.log(count)
 */
 
-function truncateString(str, num) {
+/*function truncateString(str, num) {
   if (str.length > num) {
     console.log(str.slice(0, num) + "...")
 }
 }
 
-truncateString("A-tisket a-tasket A green and yellow basket", 8);
+truncateString("A-tisket a-tasket A green and yellow basket", 8);*/
+
+function findElement(arr, func) {
+  let num = 0;
+  for (var i = 0; i < arr.length; i++) {
+    num = arr[i]
+    if (func(num)) {
+      return num;
+      
+  }
+  return undefined;
+}
+}
+
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
