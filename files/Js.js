@@ -139,7 +139,7 @@ confirmEnding("He has to give me a new name", "name");
 
 */
 
-function repeatStringNumTimes(str, num) {
+/*function repeatStringNumTimes(str, num) {
   var repeatedString = "";
   while (num >0) {
     repeatedString += str;
@@ -150,4 +150,21 @@ function repeatStringNumTimes(str, num) {
 }
 
 repeatStringNumTimes("*", 3);
+*/
 
+/*let count = 0;
+const nums = [0, 1, 2, 3]
+nums.forEach(num => {
+  if (num) count += 1
+})
+
+console.log(count)
+*/
+
+function truncateString(str, num) {
+  if (str.length > num) {
+    console.log(str.slice(0, num) + "...")
+}
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
