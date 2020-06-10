@@ -183,3 +183,17 @@ function findElement(arr, func) {
 
 
 findElement([1, 2, 3, 4], num => num % 2 === 0);
+
+function titleCase(str) {
+  var splitStr = str.toLowerCase().split(' ');
+  for(var i =0; i < splitStr.length; i ++) {
+    splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+
+  }
+
+  
+  return console.log(splitStr.join(' '));
+}
+
+titleCase("I'm a little tea pot");
+
