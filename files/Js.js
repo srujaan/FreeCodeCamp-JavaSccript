@@ -206,3 +206,17 @@ function frankenSplice(arr1, arr2, n) {
   }
   return localArray;
 }
+
+function bouncer(arr) {
+  let newArray = []
+  for(var i = 0; i <arr.length; i++) {
+    if (arr[i]) newArray.push(arr[i])
+  }
+  console.log(newArray)
+  return newArray;
+  
+}
+
+
+
+bouncer([7, "ate", "", false, 9]);
