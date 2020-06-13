@@ -220,3 +220,18 @@ function bouncer(arr) {
 
 
 bouncer([7, "ate", "", false, 9]);
+
+
+function getIndexToIns(arr3, num3) {
+  arr3.sort(function(a, b) {
+    return a - b;
+  });
+  for(var a = 0; a < arr3.length; a++){
+    if(arr3[a] >= num3) return a;
+  }
+  console.log(arr3.length)
+  return arr3.length;
+}
+
+getIndexToIns([40, 60, 43, 2, 87], 50);
+
