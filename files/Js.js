@@ -380,3 +380,10 @@ let glideMixin = function(obj) {
 
 glideMixin(bird);
 glideMixin(boat);
+
+(function () { // this is an anonymous function expression that executes right away
+  //This pattern is known as an immediately invoked function expression or IIFE.
+    console.log("A cozy nest is ready");
+  })();
+  
+  
